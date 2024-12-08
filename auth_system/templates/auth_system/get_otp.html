@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Get OTP</title>
+</head>
+<body>
+    <h1>Your OTP Code</h1>
+    <p style="font-size: 24px; font-weight: bold; color: green;">{{ otp }}</p>
+    <p>Sent to Phone Number: <strong>{{ phone_number }}</strong></p>
+    <a href="{% url 'auth-verify' %}">Go to Verify Page</a>
+</body>
+</html>
